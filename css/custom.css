@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css?family=Marck+Script|Philosopher|Marmelad|Bad+Script&subset=latin,cyrillic);
+
+/*@media (min-width: 768px) and (max-width: 1200px) {
+   .navbar-header {
+         float: none;
+     }
+     .navbar-left,.navbar-right {
+         float: none !important;
+     }
+     .navbar-toggle {
+         display: block;
+     }
+     .navbar-collapse {
+         border-top: 1px solid transparent;
+         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+     }
+     .navbar-fixed-top {
+         top: 0;
+         border-width: 0 0 1px;
+     }
+     .navbar-collapse.collapse {
+         display: none!important;
+     }
+     .navbar-nav {
+         float: none!important;
+         margin-top: 7.5px;
+     }
+     .navbar-nav>li {
+         float: none;
+     }
+     .navbar-nav>li>a {
+         padding-top: 10px;
+         padding-bottom: 10px;
+     }
+     .collapse.in{
+         display:block !important;
+     }
+}*/
+
+body {
+    font-family: 'Marmelad', sans-serif;
+    font-size: 16px;
+    padding-top: 65px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Philosopher', sans-serif;
+}
+p.indent {
+    text-indent: 30px;
+}
+p.justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul.list-no-bullet {
+    list-style: none;
+}
+
+.navbar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+    border-radius: 0 !important;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand.dmsh {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 25px;
+}
+
+.navbar-brand.dmsh img {
+    width: 32px;
+    height: 32px;
+    margin-top: -6px;
+    margin-right: 10px;
+    float: left;
+}
+
+div.section {
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+div.section:nth-child(2n+2) {
+    background: #f7f7f7;
+}
+
+div.section h1,
+div.section h2,
+div.section h3,
+div.section h4,
+div.section h5,
+div.section h6 {
+    margin-top: 0;
+    text-align: center;
+}
+
+div.section .head-title {
+    display: block;
+    margin-bottom: 50px;
+}
+
+div.section .head-sub {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+div.section .head-delimiter {
+    display: block;
+    width: 130px;
+    height: 3px;
+    background: #ffd500;
+    margin: 15px auto 20px;
+}
+
+div.section .head-delimiter:after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    background: #0070bb;
+}
+
+div.header div.caption {
+    position: relative;
+}
+
+div.header div.caption h1,
+div.header div.caption h2,
+div.header div.caption h3,
+div.header div.caption h4 {
+    font-family: 'Bad Script', cursive;
+}
+
+div.header div.caption h1 {
+    font-size: 48px;
+}
+
+div.header div.caption h4 {
+    font-size: 25px;
+}
+
+@media (max-width: 800px) {
+    div.header div.caption {
+        margin-top: -37.5px !important;
+    }
+
+    div.header div.caption h1 {
+        font-size: 25px;
+    }
+
+    div.header div.caption h4 {
+        font-size: 15px;
+    }
+
+    .navbar-brand.dmsh {
+        font-size: 15px !important;
+    }
+}
+
+div.header {
+    position: relative;
+}
+
+div.header div.caption {
+    position: absolute;
+    margin-top: -57px;
+    left: 2%;
+    color: #ffffff;
+    top: 50%;
+}
+
+div.header div.caption span {
+    display: block;
+    text-align: right;
+    margin: -5px 32px 0 0;
+}
+
+div.header img {
+    width: 100%;
+}
+
+body > div.section {
+    padding-bottom: 130px;
+    padding-top: 90px;
+}
+
+div.section.section-files ul {
+    margin-bottom: 0 !important;
+}
+
+div.section.section-files ul > li:last-child {
+    margin-bottom: 0 !important;
+}
+
+div.section.section-files ul > li {
+    border: 1px transparent;
+    border-radius: 5px;
+    background: #e9e9e9;
+    margin: 5px 0;
+    transition: all 0.7s ease-out !important;
+}
+
+div.section.section-files ul > li.important {
+    background: rgba(0, 112, 187, 0.7)
+}
+
+div.section.section-files ul > li.important a {
+    color: white;
+}
+
+div.section.section-files ul > li.important:hover {
+    background: rgba(0, 112, 187, 1)
+}
+
+div.section.section-files ul > li.strong {
+    background: rgba(255, 213, 0, 0.7);
+}
+
+div.section.section-files ul > li.strong a {
+    color: black;
+}
+
+div.section.section-files ul > li.strong:hover {
+    background: rgba(255, 213, 0, 1);
+}
+
+div.section.section-files ul > li.strong a {
+    padding: 9px 15px;
+}
+
+div.section.section-files ul > li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    transition: all 0.7s ease-out !important;
+}
+
+div.section.section-files ul > li:hover {
+    background: #d0d0d0;
+}
+
+div.section.section-about p {
+    text-indent: 30px;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+div.section.section-about p span.first {
+    padding: 0 6px;
+    margin-right: -2px;
+    background: #dcdcd9;
+    border-radius: 3px;
+    font-size: 36px;
+    line-height: 90%;
+    color: #000000;
+}
+
+div.section.section-offer .thumbnail {
+    border: none;
+    background: none;
+}
+
+div.section.section-offer .thumbnail img {
+    max-width: 180px;
+    max-height: 180px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+span.img-caption {
+    margin-top: 7px;
+    color: #979794;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+footer div.row {
+    padding: 15px 7px 15px 7px;
+}
